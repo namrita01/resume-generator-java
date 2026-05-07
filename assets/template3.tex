@@ -1,0 +1,72 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\definecolor{headercolor}{RGB}{173,100,82}
+
+\titleformat{\section}
+  {\color{headercolor}\large\bfseries}
+  {}{0em}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+\pagestyle{empty}
+\newcommand{\header}[1]{\textbf{\color{headercolor}#1}}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\fontsize{24}{28}\selectfont\bfseries\color{headercolor} {{{NAME}}}}\\[0.5em]
+{{{ADDRESS}}} • {{{EMAIL}}} • {{{PHONE}}}
+\end{center}
+
+\noindent\rule{\textwidth}{2pt}
+
+\section*{Summary}
+{{{ABOUT}}}
+
+\section*{Professional Experience}
+
+\vspace{0.3em}
+\header{{{ROLE1}}} \hfill \hfill \textit{{{DURATION1}}}\\
+{{{COMPANY1}}}, {{{LOCATION1}}}
+\begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+  \item {{{RESP1_1}}}
+  \item {{{RESP1_2}}}
+  \item {{{RESP1_3}}}
+\end{itemize}
+
+\vspace{0.4em}
+\header{{{ROLE2}}} \hfill \hfill \textit{{{DURATION2}}}\\
+{{{COMPANY2}}}, {{{LOCATION2}}}
+\begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+  \item {{{RESP2_1}}}
+  \item {{{RESP2_2}}}
+  \item {{{RESP2_3}}}
+\end{itemize}
+
+\vspace{0.4em}
+\header{{{ROLE3}}} \hfill \hfill \textit{{{DURATION3}}}\\
+{{{COMPANY3}}}, {{{LOCATION3}}}
+\begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+  \item {{{RESP3_1}}}
+  \item {{{RESP3_2}}}
+\end{itemize}
+
+\vspace{0.3em}
+\section*{Education}
+
+\header{{{DEGREE}}} \hfill \textit{{{GRAD_YEAR}}}\\
+Honors: {{{HONORS}}}\\
+{{{COLLEGE}}}, {{{COLLEGE_LOC}}}
+
+\vspace{0.3em}
+\section*{Additional Skills}
+\begin{itemize}[leftmargin=2em,itemsep=0.3ex]
+  \item {{{SKILL1}}}
+  \item {{{SKILL2}}}
+\end{itemize}
+
+\end{document}

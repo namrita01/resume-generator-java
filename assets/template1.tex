@@ -1,0 +1,84 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Custom section command
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1.5}{*0.5}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\name}[1]{
+  \begin{center}
+    \Huge\textbf{#1}
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\contact}[3]{
+  \begin{center}
+    #1 \\
+    #2 \\
+    #3
+  \end{center}
+  \vspace{-0.5em}
+  \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\role}[4]{
+  \begin{center}
+    \textbf{\textnormal{#1}} \hfill \textbf{\textnormal{#2}} \\
+    \textit{\textnormal{#3}} \hfill \textit{\textnormal{#4}}
+  \end{center}
+}
+
+\begin{document}
+
+\name{\textnormal{{{NAME}}}}
+
+\vspace{-0.5em}
+\contact{\textnormal{{{LINKEDIN}}} \quad | \quad \textnormal{{{GITHUB}}} \quad | \quad \textnormal{{{LEETCODE}}}}{\textnormal{{{PHONE}}}}{\textnormal{{{EMAIL}}}}
+
+\vspace{-0.5em}
+\begin{center}
+\textit{\textnormal{{{ABOUT}}}}
+\end{center}
+
+\section{PROFESSIONAL EXPERIENCE}
+\textnormal{{{EXPERIENCE}}}
+
+\section{PROJECTS}
+\textnormal{{{PROJECTS}}}
+
+\section{EDUCATION}
+
+\vspace{0.5em}
+\role{{{COLLEGE}}}{{{COLLEGE_LOC}}}{{{DEGREE}}}{{{COLLEGE_DUR}}}
+
+\vspace{0.5em}
+\role{{{SCHOOL12}}}{{{SCHOOL12_LOC}}}{{{CLASS12}}}{{{SCHOOL12_DUR}}}
+
+\vspace{0.5em}
+\role{{{SCHOOL10}}}{{{SCHOOL10_LOC}}}{{{CLASS10}}}{{{SCHOOL10_DUR}}}
+
+\section{SKILLS}
+\textnormal{{{SKILLS}}}
+
+\section{CERTIFICATIONS}
+\textnormal{{{CERTIFICATIONS}}}
+
+\section{ACHIEVEMENTS}
+\textnormal{{{ACHIEVEMENTS}}}
+
+\end{document}

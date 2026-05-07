@@ -1,0 +1,119 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{array}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}\vspace{-2pt}
+}
+
+\newcommand{\resumeSection}[1]{
+  \vspace{2mm}
+  \par\noindent\textcolor{black}{\rule{2pt}{0.35cm}}
+  \hspace{1mm}\textbf{\large #1}\par
+  \vspace{1mm}
+}
+
+\newenvironment{resumeSubsection}
+  {\begin{tabular*}{\textwidth}{@{\hspace{-0.5em}\extracolsep{\fill}}ll}}
+  {\end{tabular*}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape {{{NAME}}}}
+\end{center}
+
+\vspace{-1em}
+\noindent\rule{\textwidth}{2pt}
+\vspace{2mm}
+
+\vspace{-1em}
+\noindent\textit{{{ABOUT}}}
+
+\vspace{1em}
+
+\resumeSection{PROFESSIONAL EXPERIENCE}
+
+\vspace{1em}
+\begin{resumeSubsection}
+  \vspace{0.5em}
+  \textit{{{DURATION1}}} \\
+  \textbf{{{COMPANY1}}, {{{LOCATION1}}}} \\
+  \textit{{{ROLE1}}}
+\end{resumeSubsection}
+\begin{itemize}
+  \setlength{\leftmargin}{0.5em}
+  \resumeItem{{{RESP1_1}}}
+  \resumeItem{{{RESP1_2}}}
+  \resumeItem{{{RESP1_3}}}
+\end{itemize}
+
+\vspace{1em}
+\begin{resumeSubsection}
+  \vspace{0.5em}
+  \textit{{{DURATION2}}} \\
+  \textbf{{{COMPANY2}}, {{{LOCATION2}}}} \\
+  \textit{{{ROLE2}}}
+\end{resumeSubsection}
+\begin{itemize}
+  \setlength{\leftmargin}{0.5em}
+  \resumeItem{{{RESP2_1}}}
+  \resumeItem{{{RESP2_2}}}
+  \resumeItem{{{RESP2_3}}}
+\end{itemize}
+
+\vspace{1em}
+\begin{resumeSubsection}
+  \vspace{0.5em}
+  \textit{{{DURATION3}}} \\
+  \textbf{{{COMPANY3}}, {{{LOCATION3}}}} \\
+  \textit{{{ROLE3}}}
+\end{resumeSubsection}
+\begin{itemize}
+  \setlength{\leftmargin}{0.5em}
+  \resumeItem{{{RESP3_1}}}
+  \resumeItem{{{RESP3_2}}}
+\end{itemize}
+
+\vspace{0.3em}
+\begin{multicols}{2}
+\resumeSection{EDUCATION}
+
+\vspace{-1em}
+\begin{tabular}{@{\hspace{-0.7em}}l@{}}
+  \textbf{{{COLLEGE}}} \\
+  {{{DEGREE}}} \\
+  {{{COLLEGE_LOC}}} \\
+  {{{GRAD_YEAR}}} \\
+  Honors: {{{HONORS}}}
+\end{tabular}
+
+\columnbreak
+
+\resumeSection{ADDITIONAL SKILLS}
+\vspace{-1em}
+\begin{itemize}
+  \setlength{\leftmargin}{0.5em}
+  \resumeItem{{{SKILL1}}}
+  \resumeItem{{{SKILL2}}}
+\end{itemize}
+\end{multicols}
+
+\vfill
+\noindent\rule{\textwidth}{2pt}
+\vspace{-1.5em}
+\begin{center}
+    \small {{{ADDRESS}}} • {{{EMAIL}}} • {{{PHONE}}}
+\end{center}
+
+\end{document}

@@ -1,0 +1,1 @@
+Project Specs: JavaFX frontend, Java backend, JDBC DB, OpenAI API for ATS optimization.

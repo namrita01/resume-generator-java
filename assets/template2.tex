@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multicol}
+
+% Define colors
+\definecolor{headingcolor}{RGB}{55,71,79}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{headingcolor}}{}{0em}{}
+\titlespacing*{\section}{0pt}{1em}{0.5em}
+
+% Subsection formatting
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}[ \hfill]
+\titlespacing*{\subsection}{0pt}{0.5em}{0.2em}
+
+% Set paragraph spacing and list style
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.5em, itemsep=0.3em, parsep=0pt, topsep=0pt}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+% Name and Contact
+{\huge\bfseries\color{headingcolor} {{{NAME}}}}
+
+\vspace{0.3em}
+{\small
+{{ADDRESS}} \quad • \quad \href{mailto:{{EMAIL}}}{{{EMAIL}}} \quad • \quad {{{PHONE}}}
+}
+
+\vspace{0.3em}
+\noindent{\color{headingcolor}\rule{\linewidth}{0.4pt}}
+
+% About
+{\small {{{ABOUT}}}}
+
+\section{Professional Experience}
+
+\subsection{Senior Financial Advisor \hfill \normalsize {{{COMPANY1}}}, {{{LOCATION1}}} \hfill \textit{{{DURATION1}}}}
+
+\begin{itemize}
+    \item {{RESP1_1}}
+    \item {{RESP1_2}}
+    \item {{RESP1_3}}
+    \item {{RESP1_4}}
+\end{itemize}
+
+\subsection{Financial Advisor \hfill \normalsize {{COMPANY2}}, {{LOCATION2}} \hfill \textit{{{DURATION2}}}}
+
+\begin{itemize}
+    \item {{{RESP2_1}}}
+    \item {{{RESP2_2}}}
+    \item {{{RESP2_3}}}
+\end{itemize}
+
+\subsection{Financial Advisor \hfill \normalsize {{{COMPANY3}}}, {{{LOCATION3}}} \hfill \textit{{{DURATION3}}}}
+
+\begin{itemize}
+    \item {{{RESP3_1}}}
+    \item {{{RESP3_2}}}
+\end{itemize}
+
+\section{{{Education}}}
+
+\textbf{{{COLLEGE}}}, {{{COLLEGE_LOC}}}\\
+{{{COLLEGE_DUR}}}\\
+{{{DEGREE}}}\\
+Honors: {{{HONORS}}}
+
+\section{{{Additional Skills}}}
+
+\begin{itemize}
+    \item {{{{SKILL1}}}}
+    \item {{{{SKILL2}}}}
+\end{itemize}
+
+\end{document}
