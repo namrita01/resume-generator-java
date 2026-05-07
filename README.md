@@ -1,15 +1,3 @@
-# ResuGen
-
-🎓 **B.Tech PBL Project - Semester 4**  
-📍 **University**: Graphic Era Hill University  
-👨‍💻 **Team Members**:  
-- [Aarush Mandoliya](https://github.com/JustAnoobCat)  
-- [Amit Rawat](https://github.com/amit-rawa-t) 
-- [Aayush Kaji](https://github.com/AayushKaji)
-- [Karan Singh Chauhan](https://github.com/karan-0007)  
-
----
-
 **ResuGen** is an intelligent resume generator that allows users to create highly customizable and ATS-optimized resumes. Built with **JavaFX** for UI, **JDBC** for database management, and integrated with the **OpenAI API** for smart content optimization, it helps users generate job-ready resumes quickly and efficiently.
 
 ---
